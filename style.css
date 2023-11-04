@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&family=Open+Sans:wght@400;700&family=Outfit:wght@700&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@700&family=Ubuntu&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    /* background-color: #333; */
+    background-image: linear-gradient(#01022d,#000000f0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containar{
+    background-image:
+     linear-gradient(to right,#01022de5 30%,#0000009a),
+    url(images/landing3.jpg);
+    background-position: right;
+    width: 75%;
+    height: 600px;
+    border-radius: 10px;
+}
+.containar:hover{
+    background-image:
+    linear-gradient(to right,#01022de5 30%,transparent),
+   url(images/landing3.jpg);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul a{
+ border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+.contant{
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+.contant h2{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.contant p{
+    letter-spacing: 2.5px;
+    line-height: 1.6;
+    width: 385px;
+    padding: 20px 0;
+}
+button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+@media(max-width: 880px){
+    .containar {
+            background-image:
+                linear-gradient(to right, #01022de5 30%, #0000009a),
+                url(images/landing3.jpg);
+            background-position: right;
+            width: 75%;
+            height: 600px;
+            border-radius: 10px;
+        }
+    .logo{
+        font-size: 20px;
+    }
+        ul{
+            width: 30%;
+    
+        }
+        ul a{
+            margin-left: 10px;
+        }
+        .contant h2 {
+           font-size: 40px;
+        }
+        .contant p {
+           width: 250px;
+           letter-spacing: 2px;
+           line-height: 1.3;
+        
+      }
+      header{
+        flex-direction: column;
+        justify-content: center;
+      }
+          button{
+            font-size: 20px;
+                padding: 3px 8px;
+                border-radius: 10px;
+                border: 2px solid transparent;
+                cursor: pointer;
+          }
+}
+
